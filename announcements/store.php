@@ -82,7 +82,6 @@
                 var_dump($access_token);
                 var_dump($app_access_token);
                 */
-                var_dump($output_j);
                 echo "All done!";
                 curl_close($curl);
 

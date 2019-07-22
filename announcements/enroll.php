@@ -1,8 +1,8 @@
 <?php
 $r = print_r($_REQUEST, true);
 $challenge = $_REQUEST['hub_challenge'];
-header("HTTP/1.1 200 " . $challenge);
-
+header("HTTP/1.1 200");
+echo $challenge;
 $app_access_token = $_REQUEST['app_access_token'];
 $access_token = $_REQUEST['access_token'];
 $client_id = $_REQUEST['client_id'];
