@@ -1,0 +1,212 @@
+2019-07-22 17:24:57:
+-------------------------------------Array
+(
+)
+
+Array
+(
+    [hub_challenge] => mmmhcUdSV4oGFM7Y-BzSrV1XWEch79yAzq-Jh8r5
+    [hub_lease_seconds] => 120
+    [hub_mode] => subscribe
+    [hub_topic] => https://api.twitch.tv/helix/streams?user_id=145688263
+)
+
+Array
+(
+    [hub_challenge] => mmmhcUdSV4oGFM7Y-BzSrV1XWEch79yAzq-Jh8r5
+    [hub_lease_seconds] => 120
+    [hub_mode] => subscribe
+    [hub_topic] => https://api.twitch.tv/helix/streams?user_id=145688263
+)
+
+Challenge is: mmmhcUdSV4oGFM7Y-BzSrV1XWEch79yAzq-Jh8r5
+
+-------------------------------------2019-07-22 17:45:29:
+-------------------------------------
+
+
+Challenge is: q8kESyMRkLDOBgxTcP7ROGtNY7x6fyOPcGr-639E
+
+-------------------------------------2019-07-22 17:45:46:
+-------------------------------------
+
+
+Challenge is: mHc7090EGWS6G8fd23wYknkLt010HbfLGdvf6E1V
+
+-------------------------------------2019-07-22 17:47:37:
+-------------------------------------
+
+
+Challenge is: IK323zaz-fWXsY5N46jut248y2g1QdudmdD3ckZS
+
+-------------------------------------
+
+2019-07-22 17:49:44:
+-------------------------------------
+Challenge is: w2aETFtEWpjpjnHrVHU0R9O_vk0i7JIoRSzIw4Cb
+-------------------------------------
+
+2019-07-22 17:58:40:
+-------------------------------------
+Challenge is: 8u69BwVZEyB9nrLO5y8E5Gwj-FALccMohadmpC4s
+-------------------------------------
+
+2019-07-22 17:59:57:
+-------------------------------------
+Challenge is: TCyKOKqUdcnkIawQ2Nv4SO0ooHz8h2t1y4wNVPyh
+-------------------------------------
+
+2019-07-22 18:00:28:
+-------------------------------------
+Challenge is: KP7wx7GgZLkSOvaS_SUE98MgR0zWwqtZHX7boYdP
+-------------------------------------
+
+2019-07-22 18:01:25:
+-------------------------------------
+Challenge is: tRh5aebGquFQyVXuNzSGFAtxYp2oCe01E01amDLr
+-------------------------------------
+
+2019-07-22 18:02:40:
+-------------------------------------
+Challenge is: m_DU-_vvOr9lK8NxpsKBpFdNaD8SEPQrrgoECEUi
+-------------------------------------
+
+2019-07-22 18:03:30:
+-------------------------------------
+Challenge is: MkqXVEm2gB7MJQPRFa2XriESrgOv9tnVGBOx0Yid
+-------------------------------------
+
+2019-07-22 18:26:54:
+-------------------------------------
+Challenge is: 6tqKRVyU0RiIe6hoQFpJndMRiZaOwF0Z1pS-cDhp
+-------------------------------------
+
+2019-07-22 18:27:04:
+-------------------------------------
+Challenge is: LsOucirIyQlEHYEPz2lytAJZO9oU-bHXhZn3XDCH
+-------------------------------------
+
+2019-07-22 18:27:35:
+-------------------------------------
+Challenge is: 5O0uYosOGEXPdBBLhCFg_NnZHeMKCyLy9saR8tLz
+-------------------------------------
+
+2019-07-22 18:27:49:
+-------------------------------------
+Challenge is: 9xgdOkup5mKbEMMclwCXOIpmHI_lQVe2UIjRbRpP
+-------------------------------------
+
+2019-07-22 18:27:59:
+-------------------------------------
+Challenge is: aoOJdKaLbrOQsrDUkFxXme1xyTmyNmU1guFtMUhm
+-------------------------------------
+
+2019-07-22 18:29:30:
+-------------------------------------
+Challenge is: kxaTHYGuU57AnZUIukDKAp6QiiXmM5-uIBWVTLsQ
+-------------------------------------
+
+2019-07-22 18:29:49:
+-------------------------------------
+Challenge is: l4TRT7728qIsXliQ_UVemaTrJZOlx32Wty56mCbm
+-------------------------------------
+
+2019-07-22 18:29:59:
+-------------------------------------
+Challenge is: qFEnVCGZZMvttKnCnkLeAVompkL7LOjQ560AaSbn
+-------------------------------------
+
+2019-07-22 18:30:20:
+-------------------------------------
+Challenge is: 9ShkKz7Kj_HS8BqraxTbx2LlEN6WbzSw8ZmwShzm
+-------------------------------------
+
+2019-07-22 18:30:29:
+-------------------------------------
+Challenge is: DAjQ6_M2D_48M9N-pUC4quQ_5bWpczJX337m9nPX
+-------------------------------------
+
+2019-07-22 18:30:38:
+-------------------------------------
+Challenge is: NZ756g2E8gjps3L0brBEUmUI6M4Ww2wh-VonRUFo
+-------------------------------------
+
+2019-07-22 18:30:49:
+-------------------------------------
+Challenge is: j-UPbtYgYPHsmaLytzKA_oAxmwLgXWoUhqvYlfaN
+-------------------------------------
+
+2019-07-22 18:31:19:
+-------------------------------------
+Challenge is: Wnj9b7Gr69xHJ7SL_-8eycbypQaHqLM_kEY_ogTh
+-------------------------------------
+
+2019-07-22 18:31:30:
+-------------------------------------
+Challenge is: 1NncoQww7HjFZM9CtwO4rcGmS_HHz4SDm-8lUarn
+-------------------------------------
+
+2019-07-22 18:32:20:
+-------------------------------------
+Challenge is: vifJTiiqTOYeTN8AjujLsc4_mJj-eiNAHDkF6CIp
+-------------------------------------
+
+2019-07-22 18:32:24:
+-------------------------------------
+Challenge is: 5NIZ59thjWQ1udQPeJLKwdOt7mvhmoy6YTdItEzT
+-------------------------------------
+
+2019-07-22 18:32:34:
+-------------------------------------
+Challenge is: g4HOOBlOilqRIa5q2jXranZ-kzfyW0fmz6PwTTE7
+-------------------------------------
+
+2019-07-22 18:33:05:
+-------------------------------------
+Challenge is: VlVhtR2O7oxhso5WBGo5CfKvLIcfXqItquXnIjoU
+-------------------------------------
+
+2019-07-22 18:37:44:
+-------------------------------------Array
+(
+)
+
+Array
+(
+    [access_token] => wau9625gi4ga8ox7pmmw9rs1w3ixp0
+    [app_access_token] => wt65cwa6gq6uf9e7sp1nsgk04r9nt7
+    [client_id] => cr8inwbvopqkqkt9mcb31y3yqtkspp
+    [hub_challenge] => WFxS_d1OtuyJ5pwRHygUEabM7Vv2uNUKkyvGWr4-
+    [hub_lease_seconds] => 120
+    [hub_mode] => subscribe
+    [hub_topic] => https://api.twitch.tv/helix/streams?user_id=145688263
+    [user_id] => 145688263
+)
+
+Array
+(
+    [access_token] => wau9625gi4ga8ox7pmmw9rs1w3ixp0
+    [app_access_token] => wt65cwa6gq6uf9e7sp1nsgk04r9nt7
+    [client_id] => cr8inwbvopqkqkt9mcb31y3yqtkspp
+    [hub_challenge] => WFxS_d1OtuyJ5pwRHygUEabM7Vv2uNUKkyvGWr4-
+    [hub_lease_seconds] => 120
+    [hub_mode] => subscribe
+    [hub_topic] => https://api.twitch.tv/helix/streams?user_id=145688263
+    [user_id] => 145688263
+)
+
+Challenge is: WFxS_d1OtuyJ5pwRHygUEabM7Vv2uNUKkyvGWr4-
+Subs: {"total":0,"data":[],"pagination":{}}
+Stream data: Array
+(
+    [data] => Array
+        (
+        )
+
+    [pagination] => Array
+        (
+        )
+
+)
+
+-------------------------------------
