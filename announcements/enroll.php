@@ -50,4 +50,17 @@ if (!empty($output_j['data'])){
 
 //Log and save data
 file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . "$r\nChallenge is: $challenge\nSubs: $output_s\nStream data: $output_d\n" . "-------------------------------------", FILE_APPEND);
+
+//TODO:  refine query below later
+//$q = "INSERT INTO announcement_store (user_id, access_token, client_id, preferred_username, expired) VALUES ('$user_id', '$access_token', '$client_id', '$preferred_username', '$expired')";
+/*
+if($db->real_query($q)){
+        $success=1;
+        //return $success;
+}else{
+        $success=0;
+        $error = $db->errno;
+        var_dump(array($str, false, $error));
+}
+*/
 ?>
