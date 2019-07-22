@@ -67,7 +67,7 @@
                 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token"));
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     
-                $data = array("hub.callback" => "https://chukwumaokere.com/twitch/announcements/enroll.php?client_id=$client_id&app_access_token=$app_access_token&access_token=$access_token&user_id=$user_id", "hub.mode" => "subscribe", "hub.topic" => "https://api.twitch.tv/helix/streams?user_id=$user_id", "hub.lease_seconds" => 120);
+                $data = array("hub.callback" => "https://chukwumaokere.com/twitch/announcements/enroll.php?client_id=$client_id&app_access_token=$app_access_token&access_token=$access_token&user_id=$user_id", "hub.mode" => "subscribe", "hub.topic" => "https://api.twitch.tv/helix/streams?user_id=$user_id", "hub.lease_seconds" => 240);
 
                 $data_string = json_encode($data);
                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
@@ -82,6 +82,8 @@
                 var_dump($access_token);
                 var_dump($app_access_token);
                 */
+                var_dump($output_j);
+                echo "All done!";
                 curl_close($curl);
 
             }

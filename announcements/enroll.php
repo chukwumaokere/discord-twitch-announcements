@@ -1,7 +1,7 @@
 <?php
 $r = print_r($_REQUEST, true);
 $challenge = $_REQUEST['hub_challenge'];
-header("HTTP/1.1 200 $challenge");
+header("HTTP/1.1 200 " . $challenge);
 
 $app_access_token = $_REQUEST['app_access_token'];
 $access_token = $_REQUEST['access_token'];
@@ -49,7 +49,7 @@ if (!empty($output_j['data'])){
 }
 
 //Log and save data
-file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . "$r\nChallenge is: $challenge\nSubs: $output_s\nStream data: $output_d\n" . "-------------------------------------", FILE_APPEND);
+file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . "$r\nChallenge is: $challenge\nSubs: $output_s\nStream data: $output_d\n" . "-------------------------------------\n", FILE_APPEND);
 
 //TODO:  refine query below later
 //$q = "INSERT INTO announcement_store (user_id, access_token, client_id, preferred_username, expired) VALUES ('$user_id', '$access_token', '$client_id', '$preferred_username', '$expired')";
