@@ -10,7 +10,6 @@ global $at, $db;
 
 $access_token = $at; 
 
-//curl -H 'Authorization: Bearer a8r24kvhan0vm5i6ob2gz33zvwuupz' -X GET 'https://api.twitch.tv/helix/webhooks/subscriptions'
 $url = "https://api.twitch.tv/helix/webhooks/subscriptions";
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
