@@ -73,14 +73,15 @@ foreach($output_j['data'] as $subscription){
 
         $output = curl_exec($curl);
 
-        $cb_debug="Renewed Sub: " . $topic . " expires in 10 days";
+        $cb_debug="Renewed subscription: " . $topic . " expires in 10 days";
         file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
 
         curl_close($curl);
         
     }else{
+        $topic = $subscription['topic'];
         // Else: do nothing. Keep current subscription
-        echo "Subscription still valid, " . $date_diff->days . " days remaining before renewal\n";
+        echo "Subscription ($topic) still valid, " . $date_diff->days . " days remaining before renewal\n";
     }
 }
 curl_close($curl);
