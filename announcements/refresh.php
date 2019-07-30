@@ -32,8 +32,7 @@ foreach($output_j['data'] as $subscription){
     $date_diff = $expiration_date->diff($today);
     if($date_diff->days <= 1){
         $url = "https://api.twitch.tv/helix/webhooks/hub";
-
-        // If theres 1 day left, delete the old subscription (since we're only allowed max of 3 and we dont want duplicates
+        // If theres 1 day left, delete the old subscription (since we're only allowed max of 3 and we dont want duplicates)
         $topic = $subscription['topic'];
         $callback = $subscription['callback'];
 
@@ -80,8 +79,7 @@ foreach($output_j['data'] as $subscription){
     }else{
         $topic = $subscription['topic'];
         // Else: do nothing. Keep current subscription
-        echo "Subscription ($topic) still valid, " . $date_diff->days . " days remaining before renewal\n";
+        echo "Subscription ($topic) still valid, " . $date_diff->days . " days remaining before expiration\n";
     }
 }
-
-curl_close($curl);
+?>
