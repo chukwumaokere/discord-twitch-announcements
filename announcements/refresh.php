@@ -78,7 +78,8 @@ foreach($output_j['data'] as $subscription){
     }else{
         $topic = $subscription['topic'];
         // Else: do nothing. Keep current subscription
-        echo "Subscription ($topic) still valid, " . $date_diff->days . " days remaining before expiration\n";
+        $log = "Subscription ($topic) still valid, " . $date_diff->days . " days remaining before expiration\n";
+        file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $log . "\n" . "-------------------------------------\n", FILE_APPEND);
     }
 }
 ?>
