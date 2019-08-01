@@ -5,6 +5,7 @@
 * https://dev.twitch.tv/docs/api/webhooks-guide/#subscriptions
 * Set up to check daily on cron if time diff = 1 day, then renew and remove old sub
 **/
+chdir(dirname(__FILE__));
 include('../../../db_twitch.php');
 global $at, $db;
 
