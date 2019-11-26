@@ -9,7 +9,20 @@ chdir(dirname(__FILE__));
 include('../../../db_twitch.php');
 global $at, $db;
 
-$access_token = $at; 
+//DEPRECATED:
+//$access_token = $at; 
+
+$q = "SELECT access_token FROM rolling_access_token ORDER BY id DESC LIMIT 1";
+
+if($res = $db->query($q)){
+    while($row = $res->fetch_row()){
+        $access_token = $row[0];
+    }
+}else{
+    $cb_debug = "FAILED TO GRAB ACCESS TOKEN FROM DB";
+    file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
+}
+
 
 $url = "https://api.twitch.tv/helix/webhooks/subscriptions";
 $curl = curl_init();
@@ -23,6 +36,7 @@ $output = curl_exec($curl);
 $output_j = json_decode($output,true);
 
 curl_close($curl);
+
 
 foreach($output_j['data'] as $subscription){
     $expiration_date = new DateTime($subscription['expires_at']);
