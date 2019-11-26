@@ -5,7 +5,30 @@ global $db, $cs, $db_discord;
 $client_id="cr8inwbvopqkqkt9mcb31y3yqtkspp";
 
 $code = '036dxpzr3wftflr2gh3phpk9x53x1o';
-if($code){
+
+$q = "SELECT access_token, expires_in, created_date FROM rolling_access_token ORDER BY id DESC LIMIT 1";
+$needs_renewal = false;
+$nr = "No";
+if($res = $db->query($q)){
+    while($row = $res->fetch_row()){
+        $expires_in = $row[1];
+        $created_date = $row[2];
+    }
+    $current_date = date('Y-m-d H:i:s');
+    $expiration_date = date(('Y-m-d H:i:s'), strtotime($created_date) + $expires_in - 432000); //subtract 5 days from expiration date, so we can renew 5 days in advance
+    if($current_date > $expiration_date){
+        $needs_renewal = true;
+        $nr = "Yes";
+    }
+    $cb_debug = "Token Expiration Date: $expiration_date, Needs renewal: $nr";
+}else{
+    //some debugging
+    $cb_debug = "FAILED TO GET ACCESS TOKEN INFO FROM DB";
+}
+file_put_contents('./test.txt', date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
+
+
+if($code && $nr == "Yes"){
 /*
     //Get User Token
     $url = "https://id.twitch.tv/oauth2/token?client_id=$client_id&client_secret=$cs&code=$code&grant_type=authorization_code&redirect_uri=https://chukwumaokere.com/twitch/announcements/store.php";
@@ -55,4 +78,8 @@ if($code){
     }
 
     curl_close($curl);
+}else{
+    //No Renewal Needed
+    $cb_debug = "NO ACCESS TOKEN RENEWAL NEEDED AT THIS TIME";
+    file_put_contents('./test.txt', date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
 }
