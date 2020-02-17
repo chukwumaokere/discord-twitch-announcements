@@ -37,11 +37,14 @@ $output_j = json_decode($output,true);
 
 curl_close($curl);
 
-if(sizeof($output_j['data']) == 0){
-    echo "output is empty using database instead";
+if(sizeof($output_j['data']) == 0){ // || sizeof($output_j['data']) < SELECT user_id FROM announcement_store
+    $cb_debug="output is empty using database instead";
     $use = 'db';
+    file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
 }else{
+    $cb_debug="using data from webcall";
     $use = 'web';
+    file_put_contents("./test.txt", date('Y-m-d H:i:s') . ":\n-------------------------------------\n" . $cb_debug . "\n" . "-------------------------------------\n", FILE_APPEND);
 }
 if($use == 'web'){
     foreach($output_j['data'] as $subscription){
