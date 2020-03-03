@@ -1,4 +1,5 @@
 <?php
+chdir(dirname(__FILE__));
 include("../../../db_twitch.php");
 include("../../../db_discord.php");
 global $db, $cs, $db_discord;
