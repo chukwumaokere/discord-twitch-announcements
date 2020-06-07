@@ -29,7 +29,8 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_POST, 0);
 curl_setopt($curl, CURLOPT_HEADER, FALSE);
-curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Bearer $access_token"));
+//curl_setopt($curl, CURLOPT_HTTPHEADER, array("Client-ID: cr8inwbvopqkqkt9mcb31y3yqtkspp"));
+curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Bearer $access_token", "Client-ID: cr8inwbvopqkqkt9mcb31y3yqtkspp"));
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $output = curl_exec($curl);
@@ -64,7 +65,7 @@ if($use == 'web'){
             curl_setopt($curl, CURLOPT_URL, $url);
             curl_setopt($curl, CURLOPT_POST, 1);
             curl_setopt($curl, CURLOPT_HEADER, FALSE);
-            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token"));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token", "Client-ID: cr8inwbvopqkqkt9mcb31y3yqtkspp"));
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
             $data = array("hub.callback" => "$callback", "hub.mode" => "unsubscribe", "hub.topic" => "$topic");
@@ -122,7 +123,7 @@ if($use == 'db'){
             curl_setopt($curl, CURLOPT_URL, $url);
             curl_setopt($curl, CURLOPT_POST, 1);
             curl_setopt($curl, CURLOPT_HEADER, FALSE);
-            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token"));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token", "Client-ID: cr8inwbvopqkqkt9mcb31y3yqtkspp"));
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
             $data_string = json_encode($data);

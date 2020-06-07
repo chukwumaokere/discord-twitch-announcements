@@ -65,7 +65,7 @@ if($code){
             curl_setopt($curl, CURLOPT_URL, $url);
             curl_setopt($curl, CURLOPT_POST, 1);
             curl_setopt($curl, CURLOPT_HEADER, FALSE);
-            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token"));
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json', "Authorization: Bearer $access_token", "Client-ID: $client_id"));
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
             $data = array("hub.callback" => "https://chukwumaokere.com/twitch/announcements/enroll.php", "hub.mode" => "subscribe", "hub.topic" => "https://api.twitch.tv/helix/streams?user_id=$user_id", "hub.lease_seconds" => 864000);
